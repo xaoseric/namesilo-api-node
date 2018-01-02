@@ -16,6 +16,8 @@
   ],
   "dependencies": {
     "axios": "^0.17.1",
+    "bluebird": "^3.5.1",
+    "glob": "^7.1.2",
     "lodash": "^4.17.4"
   }
 }
