@@ -71,7 +71,7 @@ const NameSilo = function (apiKey, config) {
         }
 
         let uri = this.baseUri + `checkRegisterAvailability?version=${self.apiVersion}&type=${self.apiType}&key=${self.apiKey}`;
-        uri.append('&domains=');
+        uri.concat('&domains=');
 
         let domainsLength = domains.length;
 
@@ -80,9 +80,9 @@ const NameSilo = function (apiKey, config) {
 
             // Do something if is the last iteration of the array
             if((i + 1) === (domainsLength)){
-                uri.append(domain);
+                uri.concat(domain);
             } else {
-                uri.append(domain + ',');
+                uri.concat(domain + ',');
             }
 
         }
