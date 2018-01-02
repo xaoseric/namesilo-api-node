@@ -99,3 +99,5 @@ const NameSilo = function (apiKey, config) {
 
     return self;
 };
+
+module.exports = NameSilo;
