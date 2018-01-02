@@ -65,7 +65,7 @@ const NameSilo = function (apiKey, config) {
             return;
         }
 
-        if (domains.isEmpty()) {
+        if (self.isEmpty(domains)) {
             self.error('No domains provided to check');
             return;
         }
@@ -96,6 +96,7 @@ const NameSilo = function (apiKey, config) {
             });
     };
 
+    self.isEmpty = a => Array.isArray(a) && a.every(self.isEmpty);
 
     return self;
 };
