@@ -1,6 +1,6 @@
 {
   "name": "namesilo-api",
-  "version": "0.0.5",
+  "version": "0.0.11",
   "description": "library for interacting with NameSilo api",
   "main": "index.js",
   "license": "MIT",
